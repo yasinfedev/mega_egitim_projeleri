@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head lang="tr">
+	<meta charset="UTF-8"/>
+    <meta name="author" content="Yasin YILDIZ" />
+    <meta name="keywords" content="HTML, CSS, JS, bilgisayar çizimi, hesap makinesi" />
+    <meta name="description" content="HTML, CSS ve JS ile bilgisayar görünümünde basit hesap makinesi projesi" />
+
+	<title>MEGA Yazılım Akademisi Bilgisayar Görnümünde Hesap Makinesi Tasarımı</title>
+    
+<style>
+#ekran {
+width: 1000px;
+    height: 400px;
+    }
+    
+#btn {
+	width: 40px;
+    height: 40px;
+}
+
+#btn2 {
+	width: 85px;
+    height: 40px;
+}
+
+#btn3 {
+	width: 131px;
+    height: 40px;
+}
+
+#btn4 {
+	width: 85px;
+    height: 84px;
+}
+
+#btn5 {
+	width: 410px;
+    height: 40px;
+}
+
+#btn6 {
+	width: 40px;
+    height: 84px;
+}
+
+#btn7 {
+	width: 40px;
+    height: 40px;
+    font-size: 8px;
+}
+
+.marka {
+	text-align: center;
+    color: white;
+    background-color: black;
+    }
+    
+ .sap {
+ height:100px;
+ background-color: black;
+ color: white;
+ }
+ 
+ .yatay {
+ background-color: black;
+ height: 10px;
+ }
+ 
+  .dikey, .kara, .gara, .bos {
+ background-color: black;
+ }
+ 
+ .dikey {
+ border: solid 2px black;
+ }
+ 
+ .light {
+ background-color: green;
+ }
+ 
+ .mon, .kara {
+ height: 20px;
+ }
+ 
+ .ekran {
+ width: 100%;
+ height: 400px;
+ background-color: darkblue;
+ color: white;
+ font-size: 30px;
+ }
+ 
+ .klavye td {
+ border: 1px solid black;
+ }
+</style>
+</head>
+
+<body>
+
+<h1>MEGA Yazılım Akademisi Pratik Çalışması</h1>
+<p>HTML, CSS ve JS ile bilgisayar görünümünde basit hesap makinesi projesi</p>
+
+ <form Name="calc">
+<table id="calc"> 
+
+<tr>
+	<td class="yatay" colspan=25></td>
+</tr>
+
+<tr>
+	<td class="dikey"></td>
+    <td id="ekran" colspan=23><input id="btn8" name="display" class="ekran" onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text"></td>
+    <td class="dikey"></td>
+</tr>
+
+<tr>
+	<td class="kara" colspan=20></td>
+    <td class="light mon"></td>
+    <td class="light mon"></td>
+    <td class="light mon"></td>
+    <td class="kara"></td>
+    <td class="mon kara"></td>
+</tr>
+
+<tr>
+	<td class="yatay" colspan=25></td>
+</tr>
+
+<tr>
+	<td colspan=10></td>
+    <td class="marka sap" colspan=5>MEGA YASİN PC</td>
+    <td colspan=10></td>
+</tr>
+
+<tr>
+	<td class="yatay" colspan=25></td>
+</tr>
+
+<tr>
+	<td class="gara" colspan=21></td>
+    <td class="light"></td>
+    <td class="light"></td>
+    <td class="light"></td>
+    <td class="gara"></td>
+</tr>
+
+
+<tr>
+	<td class="yatay" colspan=25></td>
+</tr>
+
+<tr class="klavye">
+	<td class="dikey"></td>
+    <td><input id="btn" type=button value="Esc" OnClick="calc.display.value=''"></td>
+    <td class="bos"></td>
+    <td><input id="btn" type=button value="F1" OnClick="calc.display.value='F1'"></td>
+    <td><input id="btn" type=button value="F2" OnClick="calc.display.value='F2'"></td>
+    <td><input id="btn" type=button value="F3" OnClick="calc.display.value='F3'"></td>
+    <td><input id="btn" type=button value="F4" OnClick="calc.display.value='F4'"></td>
+    <td class="bos"></td>
+    <td><input id="btn" type=button value="F5" OnClick="calc.display.value='F5'"></td>
+    <td><input id="btn" type=button value="F6" OnClick="calc.display.value='F6'"></td>
+    <td><input id="btn" type=button value="F7" OnClick="calc.display.value='F7'"></td>
+    <td><input id="btn" type=button value="F8" OnClick="calc.display.value='F8'"></td>
+    <td class="bos"></td>
+    <td><input id="btn" type=button value="F9" OnClick="calc.display.value='F9'"></td>
+    <td><input id="btn" type=button value="F10" OnClick="calc.display.value='F10'"></td>
+    <td><input id="btn" type=button value="F11" OnClick="calc.display.value='F11'"></td>
+    <td><input id="btn" type=button value="F12" OnClick="calc.display.value='F12'"></td>
+    <td><input id="btn7" type=button value="PrtScr" OnClick="calc.display.value='PrtScr'"></td>
+    <td><input id="btn7" type=button value="ScrLck" OnClick="calc.display.value='ScrolLock'"></td>
+    <td><input id="btn7" type=button value="PsBrk" OnClick="calc.display.value='PauseBrk'"></td>
+    <td class="marka" colspan=4>MEGA YASİN PC</td>
+    <td class="dikey"></td>
+</tr>
+
+<tr class="klavye">
+	<td class="dikey"></td>
+    <td><input id="btn" type=button value="é" OnClick="calc.display.value+='é'"></td>
+    <td><input id="btn" type=button value="1" OnClick="calc.display.value+='1'"></td>
+    <td><input id="btn" type=button value="2" OnClick="calc.display.value+='2'"></td>
+    <td><input id="btn" type=button value="3" OnClick="calc.display.value+='3'"></td>
+    <td><input id="btn" type=button value="4" OnClick="calc.display.value+='4'"></td>
+    <td><input id="btn" type=button value="5" OnClick="calc.display.value+='5'"></td>
+    <td><input id="btn" type=button value="6" OnClick="calc.display.value+='6'"></td>
+    <td><input id="btn" type=button value="7" OnClick="calc.display.value+='7'"></td>
+    <td><input id="btn" type=button value="8" OnClick="calc.display.value+='8'"></td>
+    <td><input id="btn" type=button value="9" OnClick="calc.display.value+='9'"></td>
+    <td><input id="btn" type=button value="0" OnClick="calc.display.value+='0'"></td>
+    <td><input id="btn" type=button value="?" OnClick="calc.display.value+='?'"></td>
+    <td><input id="btn" type=button value="-" OnClick="calc.display.value+='-'"></td>
+    <td colspan=3><input id="btn3" type=button value="Back Space" OnClick="calc.display.value=''"></td>
+    <td><input id="btn7" type=button value="Ins" OnClick="calc.display.value='Ins'"></td>
+    <td><input id="btn7" type=button value="Home" OnClick="calc.display.value='Home'"></td>
+    <td><input id="btn7" type=button value="PgeUp" OnClick="calc.display.value='PageUp'"></td>
+    <td><input id="btn7" type=button value="NmLck" OnClick="calc.display.value='NumLock'"></td>
+    <td><input id="btn" type=button value="/" OnClick="calc.display.value+='/'"></td>
+    <td><input id="btn" type=button value="*" OnClick="calc.display.value+='*'"></td>
+    <td><input id="btn" type=button value="-" OnClick="calc.display.value+='-'"></td>
+    <td class="dikey"></td>
+</tr>
+
+<tr class="klavye">
+	<td class="dikey"></td>
+    <td colspan=2><input id="btn2" type=button value="Tab" OnClick="calc.display.value='Tab'"></td>
+    <td><input id="btn" type=button value="Q" OnClick="calc.display.value+='Q'"></td>
+    <td><input id="btn" type=button value="W" OnClick="calc.display.value+='W'"></td>
+    <td><input id="btn" type=button value="E" OnClick="calc.display.value+='E'"></td>
+    <td><input id="btn" type=button value="R" OnClick="calc.display.value+='R'"></td>
+    <td><input id="btn" type=button value="T" OnClick="calc.display.value+='T'"></td>
+    <td><input id="btn" type=button value="Y" OnClick="calc.display.value+='Y'"></td>
+    <td><input id="btn" type=button value="U" OnClick="calc.display.value+='U'"></td>
+    <td><input id="btn" type=button value="I" OnClick="calc.display.value+='I'"></td>
+    <td><input id="btn" type=button value="O" OnClick="calc.display.value+='O'"></td>
+    <td><input id="btn" type=button value="P" OnClick="calc.display.value+='P'"></td>
+    <td><input id="btn" type=button value="Ğ" OnClick="calc.display.value+='Ğ'"></td>
+    <td><input id="btn" type=button value="Ü" OnClick="calc.display.value+='Ü'"></td>
+    <td colspan=2 rowspan=2><input id="btn4" type=button value="⏎" OnClick="calc.display.value=eval(calc.display.value)"></td>
+    <td><input id="btn7" type=button value="Delete" OnClick="calc.display.value=''"></td>
+    <td><input id="btn7" type=button value="End" OnClick="calc.display.value='End'"></td>
+    <td><input id="btn7" type=button value="PgDwn" OnClick="calc.display.value='PageDown'"></td>
+    <td><input id="btn" type=button value="7" OnClick="calc.display.value+='7'"></td>
+    <td><input id="btn" type=button value="8" OnClick="calc.display.value+='8'"></td>
+    <td><input id="btn" type=button value="9" OnClick="calc.display.value+='9'"></td>
+    <td rowspan=2><input id="btn6" type=button value="+" OnClick="calc.display.value+='+'"></td>
+    <td class="dikey"></td>
+</tr>
+
+<tr class="klavye">
+	<td class="dikey"></td>
+    <td colspan=2><input id="btn2" type=button value="Caps Lock" OnClick="calc.display.value+='Caps Lock'"></td>
+    <td><input id="btn" type=button value="A" OnClick="calc.display.value+='A'"></td>
+    <td><input id="btn" type=button value="S" OnClick="calc.display.value+='S'"></td>
+    <td><input id="btn" type=button value="D" OnClick="calc.display.value+='D'"></td>
+    <td><input id="btn" type=button value="F" OnClick="calc.display.value+='F'"></td>
+    <td><input id="btn" type=button value="G" OnClick="calc.display.value+='G'"></td>
+    <td><input id="btn" type=button value="H" OnClick="calc.display.value+='H'"></td>
+    <td><input id="btn" type=button value="J" OnClick="calc.display.value+='J'"></td>
+    <td><input id="btn" type=button value="K" OnClick="calc.display.value+='K'"></td>
+    <td><input id="btn" type=button value="L" OnClick="calc.display.value+='L'"></td>
+    <td><input id="btn" type=button value="Ş" OnClick="calc.display.value+='Ş'"></td>
+    <td><input id="btn" type=button value="İ" OnClick="calc.display.value+='İ'"></td>
+    <td><input id="btn" type=button value="; ," OnClick="calc.display.value+=','"></td>
+    <td class="bos"></td>
+    <td class="bos"></td>
+    <td class="bos"></td>
+    <td><input id="btn" type=button value="4" OnClick="calc.display.value+='4'"></td>
+    <td><input id="btn" type=button value="5" OnClick="calc.display.value+='5'"></td>
+    <td><input id="btn" type=button value="6" OnClick="calc.display.value+='6'"></td>
+    <td class="dikey"></td>
+</tr>
+
+<tr class="klavye">
+	<td class="dikey"></td>
+    <td colspan=2><input id="btn2" type=button value="⇧ Shift" OnClick="calc.display.value+='Shift'"></td>
+    <td><input id="btn" type=button value="&lt; &gt; " OnClick="calc.display.value='PrtScr'"></td>
+    <td><input id="btn" type=button value="Z" OnClick="calc.display.value+='Z'"></td>
+    <td><input id="btn" type=button value="X" OnClick="calc.display.value+='X'"></td>
+    <td><input id="btn" type=button value="C" OnClick="calc.display.value+='C'"></td>
+    <td><input id="btn" type=button value="V" OnClick="calc.display.value+='V'"></td>
+    <td><input id="btn" type=button value="B" OnClick="calc.display.value+='B'"></td>
+    <td><input id="btn" type=button value="N" OnClick="calc.display.value+='N'"></td>
+    <td><input id="btn" type=button value="M" OnClick="calc.display.value+='M'"></td>
+    <td><input id="btn" type=button value="Ö" OnClick="calc.display.value+='Ö'"></td>
+    <td><input id="btn" type=button value="Ç" OnClick="calc.display.value+='Ç'"></td>
+    <td><input id="btn" type=button value=": ." OnClick="calc.display.value+='.'"></td>
+    <td colspan=3><input id="btn3" type=button value="⇧ Shift" OnClick="calc.display.value='Shift'"></td>
+    <td class="bos"></td>
+    <td><input id="btn" type=button value="↑" OnClick="calc.display.value='↑'"></td>
+    <td class="bos"></td>
+    <td><input id="btn" type=button value="1" OnClick="calc.display.value+='1'"></td>
+    <td><input id="btn" type=button value="2" OnClick="calc.display.value+='2'"></td>
+    <td><input id="btn" type=button value="3" OnClick="calc.display.value+='3'"></td>
+    <td rowspan=2><input id="btn6" type=button value="⏎" OnClick="calc.display.value=eval(calc.display.value)"></td>
+    <td class="dikey"></td>
+</tr>
+
+<tr class="klavye">
+	<td class="dikey"></td>
+    <td><input id="btn" type=button value="Ctrl" OnClick="calc.display.value='Ctrl'"></td>
+    <td><input id="btn" type=button value="Win" OnClick="calc.display.value='Win'"></td>
+    <td><input id="btn" type=button value="Alt" OnClick="calc.display.value='Alt'"></td>
+    <td colspan=9><input id="btn5" type=button value="SPACE" OnClick="calc.display.value+=' '"></td>
+    <td><input id="btn" type=button value="Alt" OnClick="calc.display.value='Alt'"></td>
+    <td><input id="btn" type=button value="Win" OnClick="calc.display.value='Win'"></td>
+    <td><input id="btn" type=button value="Mnu" OnClick="calc.display.value='Menü'"></td>
+    <td><input id="btn" type=button value="Ctrl" OnClick="calc.display.value='Ctrl'"></td>
+    <td><input id="btn" type=button value="←" OnClick="calc.display.value='←'"></td>
+    <td><input id="btn" type=button value="↓" OnClick="calc.display.value='↓'"></td>
+    <td><input id="btn" type=button value="→" OnClick="calc.display.value='→'"></td>
+    <td colspan=2><input id="btn2" type=button value="0" OnClick="calc.display.value+='0'"></td>
+    <td><input id="btn" type=button value=". Del" OnClick="calc.display.value+='.'"></td>
+    <td class="dikey"></td>
+</tr>
+
+<tr>
+	<td class="yatay" colspan=25></td>
+</tr>
+
+
+</table>
+</form>
+
+
+</body>
+</html>
