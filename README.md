@@ -7,4 +7,6 @@ Hesap makinesi alanını tablo kullanarak oluşturdum. Ekranı "input type text"
 Butonlara "button1" ve "button4" olarak iki sınıf atadım. Tablonun ilk 3 kolonuna ayrı, sonunce yani 4.kolona ise ayrı bir genişlik verdim.<br>
 Butonlara value'lar ile değerler atadım. Yine butonlara "onClick" özelliği atadım. Yalnızca değeri "=" olan butona ayrı bir "onClick" eylemi atayarak hesaplama yaptırdım.<br>
 Butonlara css :hover psödo sınıfıyla farklı renk değerleri atayarak görsellik sağladım.<br>
-En alta ise ayrı bir div ile "footer" oluşturarak burada HTML metin biçimlendirme etiketlerini (strong, abbr) ve HTML "&copy;" özelliğini kullandım.
+En alta ise ayrı bir div ile "footer" oluşturarak burada HTML metin biçimlendirme etiketlerini (strong, abbr) ve HTML "&copy;" özelliğini kullandım.<br>
+---<br>
+![Proje çıktısı](https://i.hizliresim.com/oa726ww.png)
