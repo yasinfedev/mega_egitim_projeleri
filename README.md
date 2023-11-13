@@ -26,4 +26,17 @@ Bu projede basit ve eski model bir cep telefonu tasarladım. Tuşları kısmen g
 Benim için epey eğlenceli ve öğretici bir deneyim oldu.<br>
 ---<br>
 ![Proje çıktısı](https://i.hizliresim.com/s80cpix.png)<br><br>
+
+## İlk Hafta Ödevini baz alarak bilgisayar (PC) görünümünde hesap makinesi tasarladım- 13/11/2023
+### Burada hesap makinesi ve işlevlerini farklı bir açıdan yorumladım.
+Hesap makinesindeki tasarım ve işlev prensiplerini kullanarak bir masaüstü bilgisayar tasarımı yapmak istedim. <br>
+Bu projede basit bir cep masaüstü PC ve klavyesini tasarladım. Tuşları kısmen görevini yerine getiriyor. <br>
+Klavyedeki numerik tuşlar kullanılarak ekrandan hesap makinesi kullanılabiliyor. Hesap yapılabiliyor.<br>
+Yine klavyedeki harf tuşları ile basit tek satır metin yazılabiliyor. <br>
+Benim için bu proje de epey eğlenceli ve öğretici bir deneyim oldu.<br>
+---<br>
+![Proje çıktısı](https://i.hizliresim.com/736yj7y.png)<br><br>
+
+
+
 - Tüm bu projelerimde [şuradaki](https://hackernoon.com/tr/html-ve-javascript-kullanarak-basit-bir-hesap-makinesi-olu%C5%9Fturman%C4%B1n-en-iyi-yolu) kaynaktan faydalandım.<br>
