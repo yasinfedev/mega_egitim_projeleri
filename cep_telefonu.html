@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head lang="tr">
+	<meta charset="UTF-8"/>
+    <meta name="author" content="Yasin YILDIZ" />
+    <meta name="keywords" content="HTML, CSS, JS, cep telefonu" />
+    <meta name="description" content="HTML, CSS ve JS ile basit cep telefonu projesi" />
+
+	<title>HTML, CSS ve JS ile cep telefonu tasarım projesi</title>
+    
+<style>
+  #btn {
+	width: 70px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+#btn1 {
+	width: 70px;
+    height:25px;
+    font-weight: bold;
+    
+
+}
+
+#btn3 {
+	width: 70px;
+    height:53px;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+#ekran {
+	width: 210px;
+    height: 90px;
+    text-align: right;
+    background-color:lightgray;
+    color: black;
+    font-size: 14px;
+}
+
+.bar {
+	
+	height: 70px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#anten {
+	border: 1px solid black;
+	height: 30px;
+    width: 10px;
+    background-color: black;
+    border: 1px solid black;
+
+}
+
+.ekran_alti {
+	
+	height: 10px;
+    background-color: black;
+
+}
+
+.alt_parca {
+	
+	height: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.left, .right {
+background-color: black;
+width: 10px;
+}
+
+
+   
+.button_yes {
+	background-color: green;
+    color: white;
+    font-weight: bold;
+
+}
+
+.button_no {
+	background-color: red;
+    color: white;
+    font-weight: bold;
+
+}
+
+.siyah td {
+	background-color: black;
+    border: 1px solid black;
+
+}
+
+</style>
+
+<body>
+  <h1>Basit Cep Telefonu Projesi</h1>
+<p>Bu projede HTML, CSS ve JS ile basit bir cep telefonu tasarladım.</p>
+
+
+<form name="calc">
+<table>
+<tr><td></td><td></td><td></td><td></td><td id="anten"></td></tr>
+<tr class="siyah"><td class="bar" colspan=5>=====</td></tr>
+<tr class="siyah">
+	<td class="left"></td>
+    <td colspan=3 class="siyah"><input type="text" id="ekran" name="display" onkeypress="return event.charCode >= 48 && event.charCode <= 57" max-length="10" size="10" readonly size="10" placeholder="MEGA CELL CEP TELEFONU"></input></td>
+    <td class="right"></td>
+</tr>
+<tr class="siyah"><td class="ekran_alti" colspan=5></td></tr>
+
+<tr class="siyah">
+	<td rowspan=6 class="left" ></td>
+    <td><input id="btn1" type=button value="REHBER" class="button1" OnClick="calc.display.value='REHBER AÇILIYOR ...'"></td>
+    <td rowspan=2><input id="btn3" type=button value="MENÜ" class="button_menu" OnClick="calc.display.value='MENÜ: 1.REHBER 2.MESAJ..'"></td>
+    <td><input id="btn1" type=button value="SİL-GERİ" class="button1"  OnClick="calc.display.value=''"></td>
+    <td rowspan=6 class="right"></td>
+</tr>
+<tr class="siyah">
+	
+    <td><input id="btn1" type=button value="YES" class="button_yes" OnClick="calc.display.value='ARAMA YAPILIYOR ...'"></td>
+   
+    <td><input id="btn1" type=button value="NO" class="button_no" OnClick="calc.display.value='ARAMA SONLANDIRILIYOR ...'"></td>
+    
+</tr>
+<tr class="siyah">
+	
+    <td><input id="btn" type=button value="1" class="button1" OnClick="calc.display.value+='1'"></td>
+    <td><input id="btn" type=button value="2" class="button1" OnClick="calc.display.value+='2'"></td>
+    <td><input id="btn" type=button value="3" class="button1" OnClick="calc.display.value+='3'"></td>
+    
+</tr>
+<tr class="siyah">
+	
+    <td><input id="btn" type=button value="4" class="button1" OnClick="calc.display.value+='4'"></td>
+    <td><input id="btn" type=button value="5" class="button1" OnClick="calc.display.value+='5'"></td>
+    <td><input id="btn" type=button value="6" class="button1" OnClick="calc.display.value+='6'"></td>
+    
+</tr>
+<tr class="siyah">
+	
+    <td><input id="btn" type=button value="7" class="button1" OnClick="calc.display.value+='7'"></td>
+    <td><input id="btn" type=button value="8" class="button1" OnClick="calc.display.value+='8'"></td>
+    <td><input id="btn" type=button value="9" class="button1" OnClick="calc.display.value+='9'"></td>
+    
+</tr>
+<tr class="siyah">
+	
+    <td><input id="btn" type=button value="*" class="button1" OnClick="calc.display.value+='*'"></td>
+    <td><input id="btn" type=button value="0" class="button1" OnClick="calc.display.value+='0'"></td>
+    <td><input id="btn" type=button value="#" class="button1" OnClick="calc.display.value+='#'"></td>
+    
+</tr>
+<tr class="siyah"><td class="alt_parca" colspan=5>=====</td></tr>
+</table>
+</form>
+
+</body>
+</html>
