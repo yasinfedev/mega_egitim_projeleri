@@ -17,4 +17,13 @@ Ayrıca tek tuş ile sayının artı ve eksi haline geçme, kare alma, kök alma
 Bunun dışında inline ve dahili CSS bilgimi geliştirdim. Tablolar konusunda da colspan pratiği yaptım.Tablo içerisine resim gömme çalışması da gerçekleştirdim.<br>
 ---<br>
 ![Proje çıktısı](https://i.hizliresim.com/et6rb9v.png)<br><br>
-- Tüm bu projelerimde [şuradaki](https://hackernoon.com/tr/html-ve-javascript-kullanarak-basit-bir-hesap-makinesi-olu%C5%9Fturman%C4%B1n-en-iyi-yolu) kaynaktan faydalandım.
+
+
+## İlk Hafta Ödevini baz alarak cep telefonu tasarladım- 13/11/2023
+### Burada konu olan hesap makinesi ve işlevlerini farklı bir açıdan yorumladım.
+Hesap makinesindeki tasarım ve işlev prensiplerini kullanarak farklı bir tasarım yapmak istedim. <br>
+Bu projede basit ve eski model bir cep telefonu tasarladım. Tuşları kısmen görevini yerine getiriyor. <br>
+Benim için epey eğlenceli ve öğretici bir deneyim oldu.<br>
+---<br>
+![Proje çıktısı](https://i.hizliresim.com/s80cpix.png)<br><br>
+- Tüm bu projelerimde [şuradaki](https://hackernoon.com/tr/html-ve-javascript-kullanarak-basit-bir-hesap-makinesi-olu%C5%9Fturman%C4%B1n-en-iyi-yolu) kaynaktan faydalandım.<br>
